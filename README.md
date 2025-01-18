@@ -57,6 +57,8 @@ The application includes a dark mode and light mode toggle:
 
 The site is fully navigable using tab keys and up/down arrows.
 
+---
+
 ## Testing and Compatibility
 
 The application has been tested on the following platforms and browsers:
