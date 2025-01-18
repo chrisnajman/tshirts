@@ -33,7 +33,7 @@ The application includes a dark mode and light mode toggle:
 - The order workflow and theme management have been split into separate modules, improving code modularity:
 
   - `order-tshirt.js`: Manages the collection of order data from the form and appends it to the URL as parameters.
-  - `switch-tshirt-colour.js`: Dynamically changes the t-shirt colour according to which radio button is checked.
+  - `switch-tshirt-colour.js`: Dynamically changes the t-shirt image by colour according to which radio button is checked in the order form.
   - `checkout-tshirt.js`: Handles the retrieval of URL parameters (order details) on the checkout page and processes or displays them accordingly for the user.
   - `setMultipleAttributes.js`: This helper function is used in both the `switch-t-shirt-colour.js` and `checkout-t-shirt.js` modules to streamline the process of setting multiple attributes on HTML elements. It accepts an element and an object containing the attributes to set, and it dynamically applies each attribute to the target element.
   - `theme.js`: Handles theme toggling (light/dark mode) and local storage management.
