@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2B QUERY</title>
+</head>
+
+<body>
+    <h1>Get combined params</h1>
+    <p id="one-box"></p>
+    <p id="two-box"></p>
+    <p id="three-box"></p>
+    <script>
+
+        function get() {
+            // (A) GET THE PARAMETERS
+            const params = new URLSearchParams(window.location.search)
+            const data = JSON.parse(params.get("data"));
+
+            // (B) ACCESS INDIVIDUAL VALUES
+            const one = data.one;
+            const two = data.two;
+            const three = data.three;
+
+            // (B) IT WORKS!
+            console.log(one);
+            console.log(two);
+            console.log(three);
+
+            document.getElementById("one-box").textContent = one
+            document.getElementById("two-box").textContent = two.join(' ')
+            document.getElementById("three-box").textContent = three.name
+
+        }
+        get()
+    </script>
+    <!-- <input type="button" value="GET" onclick="get()"> -->
+
+</body>
+
+</html>
