@@ -314,6 +314,7 @@ form {
     dl {
         display: grid;
         grid-gap: 0.25rem 1rem;
+        padding-inline: 1.125rem;
     }
     dt {
         font-weight: 600;
