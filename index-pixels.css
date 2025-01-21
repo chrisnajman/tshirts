@@ -250,6 +250,13 @@ select {
     }
 }
 
+/* Shared */
+form,
+dl {
+    min-width: 208px;
+}
+
+/* Order form */
 form {
     padding: 20px 15px;
     background-color: var(--bg-form);
@@ -314,7 +321,6 @@ form {
     dl {
         display: grid;
         grid-gap: 4px 16px;
-        min-width: 208px;
     }
     dt {
         font-weight: 600;
