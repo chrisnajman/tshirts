@@ -2,6 +2,7 @@ import setMultipleAttributes from "./set-multiple-attributes.js"
 
 export default function checkoutTshirt() {
   const checkout = document.getElementById("checkout")
+  const backButton = document.getElementById("back-button")
 
   if (checkout) {
     const quantity = document.getElementById("quantity")
@@ -47,5 +48,11 @@ export default function checkoutTshirt() {
     colour.textContent = colourValue
     unitPrice.textContent = `${poundSymbol}5`
     total.textContent = poundSymbol + priceValue
+
+    /* Go back (sending params back to index.html) */
+    backButton.addEventListener("click", () => {
+      const url = "index.html?" + params.toString()
+      location.href = url
+    })
   }
 }
