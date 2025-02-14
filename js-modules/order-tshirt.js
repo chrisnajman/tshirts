@@ -37,7 +37,7 @@ export default function orderTshirt() {
       location.href = url
     })
 
-    // Retrieve params from sent back from checkout.html and use them to repopulate form fields and t-shirt image accordingly.
+    // Retrieve params sent back from checkout.html and use them to repopulate form fields and t-shirt image accordingly.
     const params = new URLSearchParams(window.location.search)
     const data = JSON.parse(params.get("data"))
 
@@ -57,11 +57,6 @@ export default function orderTshirt() {
           radio.value === data.radioValue
             ? (radio.checked = true)
             : (radio.checked = false)
-          // if (radio.value === data.radioValue) {
-          //   radio.checked = true
-          // } else {
-          //   radio.checked = false
-          // }
         })
 
         // Tshirt image
