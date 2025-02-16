@@ -1,4 +1,4 @@
-import setMultipleAttributes from "./set-multiple-attributes.js"
+import setMultipleAttributes from "../set-multiple-attributes.js"
 
 export default function switchTshirtColour() {
   const radios = document.querySelectorAll("input[name='colour']")
